@@ -3,6 +3,7 @@ layout: page
 weight: 0
 group: marketing-campaigns
 title: Getting Started with Automation
+order: 2
 seo:
   title: Getting Started with Automation
   description: Use Automation to create an automated email series or drip campaign targeted towards a specific audience.
@@ -25,6 +26,8 @@ With Automation, you could build email campaigns to:
 * Welcome new contacts when they join your list with a warm message and introductory tips.
 * Engage contacts who’ve downloaded an asset from you with follow-up content.
 * Promote an upcoming event to a list of invitees with a series of reasons to attend.
+
+<iframe src="https://player.vimeo.com/video/359829207" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ## Getting Started with Automation
 
@@ -53,7 +56,7 @@ Contacts will only receive your automation if you add them to the list you selec
 
 </call-out>
 
-5. Select the exit criteria for this series. You can choose from "Contacts will leave the series one they've received all the emails" or "Contacts will leave the series if they no longer meet the entry criteria". 
+5. Select the exit criteria for this series. You can choose from "Contacts will leave the series one they've received all the emails" or "Contacts will leave the series if they no longer meet the entry criteria".
 
 <call-out>
 
@@ -63,6 +66,13 @@ If you select “no longer meet entry criteria”, before each email in your ser
 
 6. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group). This Unsubscribe Group will apply to all emails in your Automation.
 7. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional). Categories are useful for [comparing performance]({{root_url}}/ui/analytics-and-reporting/category-comparison/) across different types of email you send.
+
+<call-out>
+
+If you have dedicated IPs, you can set up [IP Pools]({{root_url}}/ui/account-and-settings/ip-pools/) that allow you separate your traffic and potentially enhance your deliverability by protecting your sender reputation. To utilize IP pools for Automations, select the IP Pool you wish to use for the entire automation series from the IP Pool drop-down.
+
+</call-out>
+
 8. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay of days or hours from the time meet the entry criteria.
 9. Build your email(s) by clicking **Add Email Content**.
 10. Choose a template, then use your preferred [editor]({{root_url}}/ui/sending-email/editor/) to craft your content.
@@ -95,7 +105,7 @@ The pre-built Welcome Series automation provides a jumping off point to inspire 
 1. Review the exit criteria to decide if you’d like to update it.
 1. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group). This Unsubscribe Group will apply to all emails in your Automation.
 1. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional). Categories are useful for [comparing performance]({{root_url}}/ui/analytics-and-reporting/category-comparison/)  across different types of email you send.
-1. The pre-built Welcome Series has three placeholder emails by default. You’ll need to edit the subject line and content of each email. You may decide to remove or add emails to the pre-built. 
+1. The pre-built Welcome Series has three placeholder emails by default. You’ll need to edit the subject line and content of each email. You may decide to remove or add emails to the pre-built.
 1. If you did not do so within the editor, you can add a subject line and select a sender from the Edit Automation page.
 1. To add more emails to this automated series, click **Add an Email**.
 1. Choose how long to wait between each email in the series. This time will be relative to the preceding email.
@@ -116,7 +126,7 @@ You can edit the content, subject line, and sender for any emails in your automa
 *To edit an automation:*
 
 1. Navigate to **Automations** and select the series you want to edit.
-1. Click **Edit** on each email you’d like to modify. 
+1. Click **Edit** on each email you’d like to modify.
 
 <call-out>
 
@@ -124,9 +134,9 @@ You can also create a template from an existing email within your Automation ser
 
 </call-out>
 
-3. Make your changes in the editor, then click **Save**. 
-4. Click the arrow in the upper left-hand corner. 
-5. Below the email you’ve edited, you’ll see an alert that changes have not yet been applied to the live automation. When you’re ready to apply them, click **Save and Apply**.  
+3. Make your changes in the editor, then click **Save**.
+4. Click the arrow in the upper left-hand corner.
+5. Below the email you’ve edited, you’ll see an alert that changes have not yet been applied to the live automation. When you’re ready to apply them, click **Save and Apply**.
 
 ### Disable an Automation
 

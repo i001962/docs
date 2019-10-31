@@ -11,6 +11,8 @@ seo:
   description: Manage your sender contact information
 ---
 
+<iframe src="https://player.vimeo.com/video/366851411" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 ##     Adding a Sender
 
 You are required to include your contact information, including a physical mailing address, inside every promotional email you send in order to comply with the U.S. CAN-SPAM Act, CASL, and other anti-spam laws of the countries your recipients live in.
@@ -35,7 +37,7 @@ If, for any reason, you need to resend the verification email, click the action 
 
 <call-out type="warning">
 
-You must verify the email address associated with your sender identity before you can edit it or use it to send a campaign.
+You must verify the email address associated with your sender identity before you can edit it or use it to schedule a Single Send or set an Automation.
 
 </call-out>
 
@@ -46,14 +48,14 @@ You may create up to 100 unique senders.
 </call-out>
 
 <call-out>
-  
+
 If you have an [authenticated domain]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/) and your sender email address matches that domain exactly, your sender identity will be automatically verified.
 
 </call-out>
 
 <call-out type="warning">
 
-Once you schedule a campaign, you cannot delete the sender identity associated with that campaign.
+Once you schedule a Single Send or set an Automation, you cannot delete the sender identity associated with the Single Send or Automation.
 
 </call-out>
 
@@ -68,7 +70,7 @@ Save time and feel confident you are set up for long-term success with Email Imp
 
 ##     Adding Sender Information to a Single Send or Automation Email
 
-SendGrid’s pre-built email templates come with an Unsubscribe module containing your Sender information by default. For templates or emails that you build yourself, you can insert your sender identity information into your campaigns using the following tags within your campaign or template content:
+Twilio SendGrid’s pre-built email templates come with an Unsubscribe module containing your Sender information by default. For templates or emails that you build yourself, you can insert your sender identity information into your campaigns using the following tags within your campaign or template content:
 
 1. **{{sender_name}}** - The sender's name.
 
@@ -84,19 +86,26 @@ SendGrid’s pre-built email templates come with an Unsubscribe module containin
 
 *To add tags to your email:*
 
-1. In the Design editor, navigate to the **Build** tab and drag a Text module into your campaign body. If you’re using the Code editor, click the gear icon on the left to open the **Settings** bar.
+1. In the Design editor, navigate to the **Build** tab and drag a Text module into your campaign body. If you’re using the Code Editor, click the gear icon on the left to open the **Settings** bar.
 1. Navigate to the **Tags** tab.
 1. Select the copy icon next to the tag you want to add to your campaign.
 1. Paste the tag into your text module.
 
-To show your sender's full address and information in the footer of the email, SendGrid recommends adding the tags as shown:
+To show your sender's full address and information in the footer of the email, Twilio SendGrid recommends adding the tags as shown:
 
 ```
 {{Sender_Name}}
-{{Sender_Address}}, {{Sender_City}}, {{Sender_State}} {{Sender_Zip}}
+
+{{Sender_Address}}
+
+{{Sender_City}}
+
+{{Sender_State}
+
+{{Sender_Zip}}
 ```
 
-You can also use the unsubscribe module When successfully completed, your tags should change as shown below when your email enters your recipient’s mailbox.
+When successfully completed, your tags should change as shown below when your email enters your recipient’s mailbox.
 
 
 ![]({{root_url}}/img/sender-tag-comparison.png "Alt text")
